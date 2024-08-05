@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website making</title>
+    <style>
+        body{
+            color:white;
+            margin:0px;
+            padding:0px;
+            background: url('pic3.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 1000px;
+            width: 80%;
+        }
+        .first{
+            position: absolute;
+            display: inline-block;
+            color: blanchedalmond;
+            padding: 12px 12px;  
+        }
+        .first img{
+            width: 150px;
+            height: 90px;
+            margin: 12px auto;
+            
+        }
+        #goal{
+            font-size: 28px;
+            background-color: rgb(37, 37, 39);
+            padding: 4px;
+            box-shadow: 4px 6px 2px white;
+            text-shadow: 3px 3px black;
+        }
+
+        @keyframes sanju2{
+
+            from {
+                width: 200px;
+            }
+            to {
+                width: 200px;
+            }
+        }
+        .second{
+            display:block;
+            width: 68%;
+            margin:12px 12px;
+            position: absolute;
+            top: 30px;
+            right: 200px;
+            height: 46px;
+            border:1px solid rgb(21, 71, 19);   
+            border-radius: 4px;
+        }
+        .third{
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            color: aliceblue;
+        }
+        .navbar{
+            list-style: none;
+        }
+        .navbar li{
+            display: inline-block;
+            padding:0px 25px;
+            text-decoration: none;
+        }
+        a{
+            color: rgb(245, 235, 235);
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 16px;
+            text-decoration: solid;
+            border-radius: 2px 2px;
+            padding: 4px 40px;
+        }
+        .navbar li a:hover{
+            background-color: rgb(0, 0, 0);
+            text-decoration: underline;   
+        }
+        .btn{
+            padding: 8px 8px;
+            margin:4px 4px;
+            border-radius: 6px 6px;  
+        }
+        button:hover{
+            background-color: rgb(93, 131, 131);
+        }
+        .container{
+            border: 1px solid rgb(59, 53, 53);
+            border-radius: 4px;
+            position: absolute;
+            top: 300px;
+            left: 380px;
+            width: 600px;
+            height: 350px;
+        }
+        .group{           
+            margin: 8px 20px;
+            position: relative;
+            top: 30px; 
+        }
+        h1{ 
+            color: rgb(49, 228, 228);
+            display: inline-block;
+            padding: 6px 10px;
+            font-size: 24px; 
+            margin: 8px 210px;
+            text-decoration: underline;  
+            text-align: center;   
+            background-color: black;    
+        }
+        #but{
+            position: absolute;
+            right: 220px;
+            top: 220px;
+            width: 160px;
+            height: 38px;
+            background-color: rgb(64, 89, 90);
+            color: beige;
+            border-radius: 4px 4px;
+        }
+        #but:hover{
+            background-color: rgb(17, 29, 25);
+        }
+        input{
+            margin: 12px 100px;
+            padding: 8px 30px;
+            width: 300px;
+            
+        }
+        #place{
+            text-align: center;
+
+        }
+        .login{
+            position: absolute;
+            top: 290px;
+            right: 190px;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="first">
+            <img src="pic4.webp" alt="">
+        <div id="goal">FITNESS GOALS</div>
+        </div>
+        <div class="second">
+            <ul class="navbar">
+                <li><a href="#" class="active">HOME</a></li>
+                <li><a href="#">CONTACT US</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+        <div class="third">
+            <button class="btn">Call us</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <marquee direction="down" height="10%"><h1>Register Here</h1></marquee>
+        <form action="noaction,php"> 
+            <div class="group">
+                <input type="text" name="Name" id="place" placeholder="ENTER YOUR NAME">
+            </div>
+            <div class="group">
+                <input type="text" name="" id="place" placeholder="ENTER YOUR EMAIL">
+            </div>
+            <button id="but">Sign Up</button>
+            <div class="login">Already have an account.
+                <button>Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
